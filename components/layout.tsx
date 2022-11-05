@@ -1,3 +1,6 @@
+import Footer from './footer';
+import Header from './header';
+
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -5,8 +8,10 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      <h1>레이마웃</h1>
+      <Header />
+      <h1>레이아웃</h1>
       <div>{children}</div>
+      <Footer />
     </>
   );
 }
